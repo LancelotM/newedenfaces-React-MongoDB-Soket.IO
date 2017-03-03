@@ -1,4 +1,5 @@
 <h1>EVE Online 角色投票 demo</h1>
+<a href="http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/">原文</a>
 <h2>需要本地配置</h2>
 <p>MongoDB</p>
 <p>Node.js</p>
