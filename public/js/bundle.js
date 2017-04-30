@@ -1202,7 +1202,11 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'thumbnail fadeInUp animated' },
-            _react2.default.createElement('img', { onClick: _this2.handleClick.bind(_this2, character), src: 'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg' }),
+            _react2.default.createElement(
+              _reactRouter.Link,
+              { to: '/characters/' + character.characterId },
+              _react2.default.createElement('img', { onClick: _this2.handleClick.bind(_this2, character), src: 'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg' })
+            ),
             _react2.default.createElement(
               'div',
               { className: 'caption text-center' },

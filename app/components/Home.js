@@ -35,7 +35,9 @@ class Home extends React.Component {
       return (
         <div key={character.characterId} className={index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'}>
           <div className='thumbnail fadeInUp animated'>
-            <img onClick={this.handleClick.bind(this, character)} src={'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'}/>
+            <Link to={'/characters/' + character.characterId}>
+              <img onClick={this.handleClick.bind(this, character)} src={'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'}/>
+            </Link>
             <div className='caption text-center'>
               <ul className='list-inline'>
                 <li><strong>Race:</strong> {character.race}</li>
